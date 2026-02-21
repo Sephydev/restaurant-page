@@ -2,7 +2,7 @@ import './styles.css';
 
 class MyDOM {
   constructor() {
-    this.container = document.querySelector('#container');
+    this.container = document.querySelector('#content');
   }
 
   createDOM() {

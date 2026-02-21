@@ -1,3 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #1e2330;
+  --btn-bg-color: #00d4ff;
+  --font-color: #e8e8e8;
+  --btn-hover-color: #ffb800;
+  --btn-active-color: #ff6b35;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-family: system-ui, sans-serif;
+  background-color: var(--main-bg-color);
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 3rem;
+  color: var(--font-color);
+}
+
 h1 {
-  color: red;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+button {
+  border: none;
+  background-color: var(--btn-bg-color);
+  font-family: system-ui, sans-serif;
+  min-width: 15rem;
+  padding: .75rem 0;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all .2s ease-in-out;
+}
+
+button:hover {
+  background-color: #ffb800;
+}
+
+button:active {
+  background-color: #ff6b35;
+  transform: scale(1.1);
 }
